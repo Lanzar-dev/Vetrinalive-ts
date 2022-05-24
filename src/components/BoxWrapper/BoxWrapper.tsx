@@ -1,7 +1,10 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { styled, useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { boxStyles } from "./styles";
+
+import { BasicCardProps } from "../../utils/app.model";
+import { NavBarProps } from "../../utils/app.model";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",

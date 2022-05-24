@@ -6,5 +6,6 @@ import { loadingStyles } from "./styles";
 export const Loading = () => (
   <Box sx={loadingStyles.main}>
     <Puff color="#21B8F9" height={500} width={100} />
+    {/* <Puff sx={loadingStyles.puff} /> */}
   </Box>
 );

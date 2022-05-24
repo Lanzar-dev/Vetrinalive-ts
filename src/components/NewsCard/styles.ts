@@ -20,7 +20,7 @@ export const newsCardStyles = {
   blogImg: {
     // width: "100px",
     // height: "100px",
-    objectFit: "cover",
+    // objectFit: "cover",
   },
   blogTitle: {
     fontWeight: 500,

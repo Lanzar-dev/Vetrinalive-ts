@@ -5,8 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { routes } from "./routes/AppRoutes";
 import { CssBaseline } from "@mui/material";
 
-// const drawerWidth = 240;
-
 const App = () => {
   return (
     <BrowserRouter>

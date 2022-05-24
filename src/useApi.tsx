@@ -1,15 +1,19 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export const useApi = (url) => {
+import { NewsProps } from "./utils/app.model";
+
+type GetNews = () => Promise<void>;
+
+export const useApi = (url: string) => {
   const [loading, setLoading] = useState(true);
-  const [news, setNews] = useState([]);
+  const [news, setNews] = useState<NewsProps[]>([]);
 
   useEffect(() => {
-    const getNews = async () => {
+    const getNews: GetNews = async () => {
       try {
         const res = await axios.get(url);
-        setNews(res.data);
+        setNews(res.data?.articles);
         setLoading(false);
       } catch (error) {
         console.log(error);
@@ -19,5 +23,5 @@ export const useApi = (url) => {
     getNews();
   }, [url]);
 
-  return { loading, news };
+  return { loading, news } as const;
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { styled, useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import { useOutletContext } from "react-router-dom";
 import BoxWrapper from "../../components/BoxWrapper/BoxWrapper";
 import { dashboardStyles } from "./styles";
@@ -9,7 +9,7 @@ import DashboardLeftSection from "../../components/DashboardLeftSection/Dashboar
 import DashboardRightSection from "../../components/DashboardRightSection/DashboardRightSection";
 import Grid from "@mui/material/Grid";
 
-// const drawerWidth = 240;
+import { NavBarProps } from "../../utils/app.model";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
@@ -21,7 +21,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const Dashboard = () => {
-  const [open, setOpen] = useOutletContext();
+  const [open, setOpen] = useOutletContext<NavBarProps[]>();
 
   return (
     <BoxWrapper open={open}>

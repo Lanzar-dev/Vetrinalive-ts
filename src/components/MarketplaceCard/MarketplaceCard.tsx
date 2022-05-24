@@ -14,6 +14,7 @@ const MarketplaceCard = () => {
       <img src={domain} alt="domain" />
     </>
   );
+
   const firstCardText = () => (
     <>
       <Typography>
@@ -21,12 +22,14 @@ const MarketplaceCard = () => {
       </Typography>
     </>
   );
+
   const secondCardImg = () => (
     <Box sx={marketCardStyles.scrollText}>
       <Typography sx={marketCardStyles.prodNum}>+50</Typography>
       <Typography sx={marketCardStyles.prodText}>Prodittion</Typography>
     </Box>
   );
+
   const secondCardText = () => (
     <>
       <Typography>

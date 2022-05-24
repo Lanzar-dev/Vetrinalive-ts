@@ -29,7 +29,7 @@ const News = () => {
       </Box>
       <Box sx={newsStyles.bottom}>
         <Grid container rowSpacing={3} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          {news?.articles.map((newsItem) => (
+          {news.map((newsItem) => (
             <Grid data-testid="gridItems" item xs={12} md={6} key={newsItem.id}>
               <NewsCard newsItem={newsItem} />
             </Grid>

@@ -1,5 +1,5 @@
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import { Box, Typography } from "@mui/material";
 import BasicCard from "../../common/BasicCard/BasicCard";
 import { appstoreCardSyles } from "./styles";
 import phoneImg from "../../assets/phoneImg.svg";

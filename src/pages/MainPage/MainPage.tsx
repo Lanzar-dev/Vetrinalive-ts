@@ -10,7 +10,7 @@ const MainPage = () => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
 
-  const [title, setTitle] = useState(null);
+  const [title, setTitle] = useState<string>(null);
   const location = useLocation();
 
   useEffect(() => {

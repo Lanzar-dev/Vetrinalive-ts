@@ -10,11 +10,13 @@ import { Box } from "@mui/system";
 import Badge from "@mui/material/Badge";
 import zapImg from "../../assets/zap.svg";
 
-const drawerWidth = 240;
+import { NavBarProps } from "../../utils/app.model";
+
+const drawerWidth: number = 240;
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
-})(({ theme, open }) => ({
+})<NavBarProps>(({ theme, open }) => ({
   zIndex: theme.zIndex.drawer + 1,
   transition: theme.transitions.create(["width", "margin"], {
     easing: theme.transitions.easing.sharp,
@@ -31,7 +33,7 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-const Navbar = ({ open, setOpen, title }) => {
+const Navbar = ({ open, setOpen, title }: NavBarProps) => {
   const theme = useTheme();
 
   const handleDrawerOpen = () => {
@@ -42,7 +44,6 @@ const Navbar = ({ open, setOpen, title }) => {
     <AppBar sx={navbarStyles.appBar} position="fixed" open={open}>
       <Toolbar>
         <IconButton
-          //   color="inherit"
           aria-label="open drawer"
           onClick={handleDrawerOpen}
           edge="start"

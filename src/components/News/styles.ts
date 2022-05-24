@@ -43,4 +43,5 @@ export const newsStyles = {
   blogLinkIcon: {
     marginLeft: "16px",
   },
+  bottom: {},
 };

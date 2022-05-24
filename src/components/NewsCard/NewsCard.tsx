@@ -3,12 +3,22 @@ import { Box, Typography } from "@mui/material";
 import ImageListItem from "@mui/material/ImageListItem";
 import { newsCardStyles } from "./styles";
 
-const NewsCard = ({ newsItem }) => {
+// import { NewsProps } from "../../utils/app.model";
+
+type NewsItemProps = {
+  newsItem: {
+    urlToImage: string;
+    author: string;
+    title: string;
+  };
+};
+
+const NewsCard = ({ newsItem }: NewsItemProps) => {
   return (
     <Box sx={newsCardStyles.main}>
       <ImageListItem sx={newsCardStyles.blogImgBox}>
         <img
-          sx={newsCardStyles.blogImg}
+          style={newsCardStyles.blogImg}
           src={newsItem.urlToImage}
           alt="blog Img"
         />

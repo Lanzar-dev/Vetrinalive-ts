@@ -4,6 +4,8 @@ import Orders from "../pages/Orders/Orders";
 import Customers from "../pages/Customers/Customers";
 import Marketing from "../pages/Marketing/Marketing";
 
+import { Route } from "../utils/app.model";
+
 export const routes = [
   {
     id: 1,

@@ -10,9 +10,8 @@ const TrustPilotCard = () => {
     <BasicCard sx={trustPilotStyles.main}>
       <Box sx={trustPilotStyles.wrapper}>
         <Box sx={trustPilotStyles.top}>
-          <img src={vector} alt="star" sx={trustPilotStyles.icon} />
+          <img src={vector} alt="star" style={trustPilotStyles.icon} />
           <Typography sx={trustPilotStyles.text}>Trustpilot</Typography>
-          {/* </Box> */}
         </Box>
         <Box sx={trustPilotStyles.middle}>
           <Typography sx={trustPilotStyles.middlePercDetails}>

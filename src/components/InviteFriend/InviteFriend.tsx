@@ -6,6 +6,7 @@ import { InviteFriendStyles } from "./styles";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import GroupOutlinedIcon from "@mui/icons-material/GroupOutlined";
 import CardTitle from "../../common/CardTitle/CardTitle";
+
 const InviteFriend = () => {
   return (
     <BasicCard>
@@ -18,9 +19,9 @@ const InviteFriend = () => {
         </Box>
         <Box sx={InviteFriendStyles.middle}>
           <Typography sx={InviteFriendStyles.middlePercDetails}>
-            <span style={{ color: "#00C48C" }}>Receive 50 products</span> by
-            inviting a friend who subscribes to a plan. Your friend will receive
-            a 30% discount coupon valid for any plan.
+            <span style={InviteFriendStyles.products}>Receive 50 products</span>{" "}
+            by inviting a friend who subscribes to a plan. Your friend will
+            receive a 30% discount coupon valid for any plan.
           </Typography>
         </Box>
         <Box sx={InviteFriendStyles.bottom}>

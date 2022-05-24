@@ -41,4 +41,5 @@ export const InviteFriendStyles = {
     marginRight: "12px",
     cursor: "pointer",
   },
+  products: { color: "#00C48C" },
 };
